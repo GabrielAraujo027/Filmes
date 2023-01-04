@@ -1,0 +1,36 @@
+<div class="container">
+  <div class="row py-4 d-flex justify-content-around">
+    <div class="col-md-4">
+      <img class="img-fluid" [src]="filme.LinkCapa" alt="Capa do filme" />
+    </div>
+
+    <div class="col-md-6">
+      <h1>{{ filme.Titulo }}</h1>
+
+      <div class="d-flex align-items-center">
+        <p class="px-1">{{ filme.AvaliacaoDaCritica | number }}/10</p>
+        <span class="badge badge-dark mx-2"> {{ filme.Genero }} </span>
+      </div>
+
+      <p class="sinopse">
+        {{ filme.Sinopse }}
+      </p>
+
+      <div class="py-2 d-flex">
+        <p class="font-weight-bold">Duração:</p>
+        <p class="px-1">{{ filme.DuracaoEmSegundos }}</p>
+      </div>
+
+      <div class="py-2 d-flex">
+        <p class="font-weight-bold">Data de lançamento:</p>
+        <p class="px-1">{{ filme.DataDeLancamento | date }}</p>
+      </div>
+
+      <div class="py-2 d-flex">
+        <p class="font-weight-bold">Classificação indicativa:</p>
+        <p class="px-1">{{ filme.ClassificacaoIndicativa }}</p>
+        <!-- Não consegui lidar com esse ENUM  -->
+      </div>
+    </div>
+  </div>
+</div>

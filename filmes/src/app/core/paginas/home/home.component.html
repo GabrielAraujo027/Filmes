@@ -1,0 +1,45 @@
+<div class="container">
+  <div class="border-bottom border-dark">
+    <p class="quem-somos h2 mt-5">Quem somos?</p>
+    <p class="mb-2 pb-2">
+      <em>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis,
+        temporibus ullam. Eligendi nihil ipsam voluptates laboriosam laudantium
+        enim aspernatur sint distinctio nesciunt, sit exercitationem voluptas
+        quia officia impedit odio dolorum.
+      </em>
+    </p>
+  </div>
+  <form class="row mt-4 justify-content-center">
+    <div class="form-group ml-4 col">
+      <label for="categoria">Classificação Indicativa</label>
+      <select class="form-control" id="categoria">
+        <option>Livre</option>
+        <option>10 Anos</option>
+        <option>12 Anos</option>
+        <option>14 Anos</option>
+        <option>16 Anos</option>
+        <option>18 Anos</option>
+      </select>
+    </div>
+    <div class="form-group ml-4 col">
+      <label for="categoria">Categoria</label>
+      <select class="form-control" id="categoria">
+        <option>Todas</option>
+        <option>ação</option>
+        <option>aventura</option>
+        <option>drama</option>
+        <option>suspense</option>
+        <option>terror</option>
+        <option>comédia</option>
+      </select>
+    </div>
+  </form>
+  <div>
+    <app-filme-card
+      class="col-sm-3 mb-3"
+      *ngFor="let filme of filmes"
+      [filme]="filme"
+    ></app-filme-card>
+  </div>
+</div>

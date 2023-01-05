@@ -60,12 +60,12 @@
       </div>
       <div class="movie-info">
         <div class="row">
-          <div class="info-section col">
+          <div class="info-section col-6">
             <label>Genero</label>
             <span>{{ filme.Genero }}</span>
           </div>
           <!--date,time-->
-          <div class="info-section col">
+          <div class="info-section col-6">
             <label>Avaliação da Critica</label>
             <span>{{ filme.AvaliacaoDaCritica }}</span>
           </div>
@@ -79,7 +79,7 @@
           <!--row-->
           <div class="info-section col">
             <label>Duracao</label>
-            <span>{{ filme.DuracaoEmSegundos }}</span>
+            <span>{{ filme.DuracaoEmSegundos / 60 }} min</span>
           </div>
         </div>
       </div>

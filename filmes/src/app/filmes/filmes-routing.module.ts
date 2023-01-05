@@ -5,12 +5,12 @@ import { RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
   {
-    path: ':codigo',
-    component: FilmeDetalhesComponent,
-  },
-  {
     path: 'filme-cadastro',
     component: FilmeCadastroComponent,
+  },
+  {
+    path: ':codigo',
+    component: FilmeDetalhesComponent,
   },
 ];
 

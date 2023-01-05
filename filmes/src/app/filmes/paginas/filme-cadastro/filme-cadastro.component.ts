@@ -16,16 +16,16 @@ export class FilmeCadastroComponent implements OnInit {
   ) {}
 
   ngOnInit(): void {
-    this.filmeForm = this.formBuilder.group({
-      Codigo: ['', [Validators.required]],
-      Titulo: ['', [Validators.required]],
-      Sinopse: ['', [Validators.required]],
-      AvaliacaoDaCritica: ['', [Validators.required]],
-      Genero: ['', [Validators.required]],
-      DuracaoEmSegundos: ['', [Validators.required]],
-      ClassificacaoIndicativa: ['', [Validators.required]],
-      DataDeLancamento: ['', [Validators.required]],
-      LinkCapa: ['', [Validators.required]],
-    });
+    // this.filmeForm = this.formBuilder.group({
+    //   Codigo: ['', [Validators.required]],
+    //   Titulo: ['', [Validators.required]],
+    //   Sinopse: ['', [Validators.required]],
+    //   AvaliacaoDaCritica: ['', [Validators.required]],
+    //   Genero: ['', [Validators.required]],
+    //   DuracaoEmSegundos: ['', [Validators.required]],
+    //   ClassificacaoIndicativa: ['', [Validators.required]],
+    //   DataDeLancamento: ['', [Validators.required]],
+    //   LinkCapa: ['', [Validators.required]],
+    // });
   }
 }
